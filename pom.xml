@@ -48,6 +48,7 @@
         <module>bill</module>
         <module>stock</module>
         <module>eureka</module>
+        <module>eureka2</module>
         <module>dashboard</module>
         <module>turbine</module>
         <module>apigw</module>

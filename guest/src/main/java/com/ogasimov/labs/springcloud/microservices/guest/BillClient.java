@@ -4,7 +4,7 @@ import org.springframework.cloud.netflix.feign.FeignClient;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 
-@FeignClient("Bill")
+@FeignClient(value = "Bill", fallback = BillClientFallbackImpl.class)
 public interface BillClient {
 
     @DeleteMapping("/bills/{tableId}")
